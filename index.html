@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+
+
+<html no_gl="true" lang="en" class="dcg-calculator-api-container">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+
+    <link rel="icon" href="https://www.desmos.com/assets/img/apps/graphing/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="assets/build/calculator_tablet-299da5973e244102695bacf76a6c8708bd590f25.css" />
+<link rel="stylesheet" href="assets/build/android-6784ebfdba5a6b61214e78146808e9f53e9d5964.css" />
+
+    <script>
+      window.platform = 'android';
+    </script>
+  </head>
+  <body>
+    <div class="dcg-sliding-interior">
+      <div id="dcg-header-container"></div>
+
+      <!-- GRAPHER -->
+      <div id="graph-container">
+      </div>
+    </div>
+
+    <div id="mygraphs-container"></div>
+    <div id="google-login-cover" class="dcg-fullscreen-loading-container">
+      <span class="dcg-spinner"></span>
+    </div>
+    <div id="dcg-modal-container"></div>
+
+    <script type="text/javascript">
+  // catches errors within iframe and promotes them to qunit during tests
+  try {
+    window.onerror=window.top.onerror;
+  } catch (ex){}
+  if(typeof Desmos === 'undefined') Desmos = {};
+  Desmos.config = {};
+  Desmos.commit = '60bbd2da95dbe64abc2c6fe5f96918c6406a324c';
+</script>
+ <!-- Pull config information, and include it in Desmos.config -->
+    <script type="text/javascript">
+  if(window.location.protocol === 'file:') {
+    window.history.pushState = function(){};
+    window.history.replaceState = function(){};
+  }
+</script>
+ <!-- Make sure we don't use pushstate on file protocol -->
+
+    <script src="assets/build/locale_data-09b163d32b8a45cf68fbdf0c7910499c3f65ee1e.js"></script>
+<script src="assets/build/calculator_tablet-6a5afa24357106f189d0b49966e415a9e8a9ad12.js"></script>
+
+  </body>
+</html>
